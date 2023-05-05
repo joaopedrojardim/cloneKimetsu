@@ -1,0 +1,160 @@
+.containernav{
+    max-width: 240px;
+    background-color: black;
+    height: 100%;
+}
+
+.containernavR{
+    display: none;
+}
+
+.containernav .logo{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(107, 67, 18);
+    position: relative;
+    background: url("./../assets/seta/frame_lb.png") no-repeat left bottom,  url("./../assets/seta/frame_rb.png") no-repeat right bottom;
+}
+
+.containernav .logo img{
+    max-width: 60%;
+}
+
+.containernav .news{
+    box-sizing: content-box;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(107, 67, 18);
+    background: url("./../assets/seta/frame_lb.png") no-repeat left bottom,  url("./../assets/seta/frame_rb.png") no-repeat right bottom, url("./../assets/seta/frame_lt.png") no-repeat left top, url("./../assets/seta/frame_rt.png") no-repeat right top;
+}
+
+.containernav .news a{
+    font-size: .825rem;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.2rem;
+    margin-left: 20px;
+    transition: .5s;
+}
+
+.containernav .news a:hover{
+    color: #bbb;
+}
+
+.containernav .conteudoAnime{
+    padding-left: 20px;
+    padding-top: 10px;
+    color: white;
+    border-bottom: 1px solid rgb(107, 67, 18);
+    background: url("./../assets/seta/frame_lb.png") no-repeat left bottom,  url("./../assets/seta/frame_rb.png") no-repeat right bottom, url("./../assets/seta/frame_lt.png") no-repeat left top, url("./../assets/seta/frame_rt.png") no-repeat right top;
+}
+
+.containernav .conteudoAnime h3{
+    background-color: rgb(107, 67, 18);
+    font-size: .825rem;
+    box-sizing: border-box;
+    padding: 0 5px;
+    display: inline;
+    letter-spacing: 1px;
+}
+
+.containernav .conteudoAnime ul{
+    padding-bottom: 10px;
+}
+
+.containernav .conteudoAnime li{
+    list-style: none;
+    font-size: .825rem;
+    letter-spacing: 1px;
+    margin-top: 8px;
+    line-height: 1.2;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.containernav .conteudoAnime li:hover{
+    color: #bbb;
+}
+
+.containernav .net{
+    padding-left: 20px;
+    padding-bottom: 30px;
+    background: url("./../assets/seta/frame_lt.png") no-repeat left top, url("./../assets/seta/frame_rt.png") no-repeat right top;
+}
+
+.containernav .net li{
+    list-style: none;
+}
+
+.containernav .net a{
+    color: white;
+    text-decoration: none;
+    font-size: .825rem;
+    letter-spacing: 1px;
+}
+
+.containernav .props{
+    padding: 0 20px;
+}
+
+.containernav .props img{
+    max-width: 100%;
+}
+
+.containernav .redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    gap: 20px;
+}
+
+.containernav .redes img{
+    width: 28px;
+}
+
+.containernav > p{
+    color: #888;
+    font-size: .75rem;
+    letter-spacing: 1px;
+    padding: 0 20px 20px 20px;
+}
+
+@media (max-width: 900px){
+    .containernav{
+        display: none;
+    }
+
+    .containernavR{
+        width: 100%;
+        height: 80px;
+        display: block;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .containernavR img{
+        width: 70px;
+    }
+
+    .containernavR button{
+        position: absolute;
+        right: 20px;
+        border: none;
+        background-color: transparent;
+        width: 40px;
+        object-fit: contain;
+    }
+
+    .containernavR button img{
+        width: 100%;
+    }
+
+}

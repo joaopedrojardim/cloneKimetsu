@@ -1,0 +1,73 @@
+
+
+.newMovieCartaz{
+    padding: 10px;
+    border: 1px solid rgb(107, 67, 18);
+    background: url("./../assets/seta/frame_lb.png") no-repeat left bottom,  url("./../assets/seta/frame_rb.png") no-repeat right bottom, url("./../assets/seta/frame_lt.png") no-repeat left top, url("./../assets/seta/frame_rt.png") no-repeat right top; 
+}
+
+.newMovieCartaz img{
+    max-width: 100%;
+}
+
+@media (max-width: 900px){
+    .containerMovies .startMovie .fundo .play{
+        color: white;
+        display: flex;
+        font-size: 2rem;
+        letter-spacing: 10px;
+    }
+}
+
+@media (max-width: 600px){
+    .containerMovies{
+        grid-template-columns:1fr;
+    }
+
+    .containerMovies .startMovie{
+        border-top: 1px solid rgb(107, 67, 18);
+    }
+
+    .containerMovies .startMovie .fundo .play{
+        height: 140px;
+    }
+
+    .containerMovies .bluray{
+        border-right: 1px solid rgb(107, 67, 18);
+    }
+}
+
+.cartazes{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.cartazes .cap{
+    padding: 10px;
+    background: url("./../assets/seta/frame_lb.png") no-repeat left bottom,  url("./../assets/seta/frame_rb.png") no-repeat right bottom, url("./../assets/seta/frame_lt.png") no-repeat left top, url("./../assets/seta/frame_rt.png") no-repeat right top; 
+    border-right: 1px solid rgb(107, 67, 18);
+    border-bottom: 1px solid rgb(107, 67, 18);
+}
+
+.cartazes .cap:nth-child(1){
+    border-left: 1px solid rgb(107, 67, 18);
+}
+
+.cartazes .cap img{
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 900px){
+    .cartazes{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cartazes .cap:nth-child(3){
+        border-left: 1px solid rgb(107, 67, 18);
+    }
+}
