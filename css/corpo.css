@@ -16,9 +16,35 @@
     border-left: 1px solid rgb(107, 67, 18);
 }
 
+.newsNow > div{
+    position: relative;
+}
+
+.newsNow > div::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0;
+    display: block;
+    top: 0;
+    left: 0;
+    background-color: rgb(107, 67, 18);
+    z-index: 1;
+    transition: .5s ease-in-out;
+}
+
+.newsNow > div:hover::after{
+    width: 100%;
+}
+
 .newsNow h2{
     color: #c61116;
     font-weight: 600;
+}
+
+.newsNow div span{
+    position: relative;
+    z-index: 100;
 }
 
 .containerPrincipal{
